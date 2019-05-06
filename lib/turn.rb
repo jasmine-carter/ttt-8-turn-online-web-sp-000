@@ -3,7 +3,7 @@ def display_board(board)
 end
 
 def input_to_index(user_input)
-  user_input.to_i - 1
+  index = user_input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -28,7 +28,7 @@ def turn(board)
 puts "Please enter 1-9:"
 user_input = gets.chomp
 input_to_index(user_input)
-until user_input.between?(0,9)
+until .between?(0,9)
   turn
 end
 end
