@@ -25,9 +25,10 @@ board[index] = character
 end
 
 def turn(board)
-until index.between(0,9)
 puts "Please enter 1-9:"
 user_input = gets.chomp
 input_to_index(user_input)
+until index.between(0,9)
+  turn
 end
 end
